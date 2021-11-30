@@ -18,8 +18,8 @@ class LoginModel {
 
   factory LoginModel.fromMap(Map<String, dynamic> map) {
     return LoginModel(
-      email: map['email'],
-      password: map['password'],
+      email: map['email'] ?? '',
+      password: map['password'] ?? '',
     );
   }
   @override
